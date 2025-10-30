@@ -16,20 +16,20 @@ const CityDetails = () => {
     <Table striped bordered hover responsive>
      <thead>
       <tr>
-       {city.weather.map((entry,index)=> (
+       {city.fechas.map((entry,index)=> (
           <th key={index}>{entry.fecha}</th>
        ))}
       </tr>
      </thead>
       <tbody>
         <tr>
-        {city.weather.map((entry,index)=> (
-          <td key={index}>{entry.temperatura}<strong>Cº</strong></td>
+        {city.fechas.map((entry,index)=> (
+          <td key={index}>{entry.temperatura.maxima}<strong>Cº</strong></td>
         ))}
         </tr>
         <tr>
-        {city.weather.map((entry,index)=> (
-          <td key={index}>{entry.viento} <strong>Km/h</strong></td>
+        {city.fechas.map((entry,index)=> (
+          <td key={index}>{entry.viento.velocidad} <strong>Km/h</strong></td>
         ))}
 
         </tr>

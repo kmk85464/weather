@@ -11,15 +11,15 @@ const WeatherCarrousel = () => {
     return (
       <>
         <Carousel>
-        {city.weather.map((entry,idx)=> (
+        {city.fechas.map((entry,idx)=> (
           <Carousel.Item key={idx}>
             <Card className='text-center'>
               <Card.Img variant='top'src={city.image} alt={city.nombre} />
                <Card.Body>
                   <Card.Title>{city.nombre} - {entry.fecha}</Card.Title>
                     <Card.Text>
-                      <strong>Temperatura:{entry.temperatura}</strong>
-                      <strong>Viento:{entry.viento}</strong>
+                      <strong>Temperatura:{entry.temperatura.maxima} / {entry.temperatura.minima}</strong>
+                      <strong>Viento:{entry.viento.velocidad}</strong>
                     </Card.Text>
                </Card.Body>
             </Card>

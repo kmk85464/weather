@@ -9,8 +9,8 @@ export const WeatherProvider = ({children}) => {
 
   useEffect (() => {
 
-    setWeather(weatherData);
-    setSelectedCity(weatherData[0]?.nombre || null);
+    setWeather(weatherData.ciudades);
+    setSelectedCity(weatherData.ciudades[0]?.nombre || null);
 
 
   },[]);

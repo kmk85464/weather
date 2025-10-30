@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 
 const CityList = () => {
  
-    const [weather,setSelectedCity] = useContext(WeatherContext);
+    const {weather,setSelectedCity} = useContext(WeatherContext);
     return (
         <div className='d-flex flex-wrap gap-3 mt-3'>
           {weather.map((city)=> (
