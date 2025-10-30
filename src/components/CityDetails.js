@@ -12,7 +12,8 @@ const CityDetails = () => {
   
   return (
     <>
-    <h2>{city.nombre}</h2>
+    <h2>{city.nombre} <img src={city.imagen} alt={city.nombre}></img></h2>
+
     <Table striped bordered hover responsive>
      <thead>
       <tr>

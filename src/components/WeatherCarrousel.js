@@ -14,7 +14,7 @@ const WeatherCarrousel = () => {
         {city.fechas.map((entry,idx)=> (
           <Carousel.Item key={idx}>
             <Card className='text-center'>
-              <Card.Img variant='top'src={city.image} alt={city.nombre} />
+              <Card.Img  style={{ maxHeight: "300px", objectFit: "cover" }}  variant='top'src={city.imagen} alt={city.nombre} />
                <Card.Body>
                   <Card.Title>{city.nombre} - {entry.fecha}</Card.Title>
                     <Card.Text>

@@ -2,6 +2,7 @@
   "ciudades": [
     {
       "nombre": "Madrid",
+      "imagen": "/img/Madrid.jpg",
       "fechas": [
         {
           "fecha": "2024-05-08",
@@ -39,6 +40,7 @@
     },
     {
       "nombre": "Barcelona",
+      "imagen": "/img/Barcelona.jpg",
       "fechas": [
         {
           "fecha": "2024-05-08",
@@ -62,6 +64,9 @@
             "maxima": 25,
             "minima": 19
           },
+          "imagen":{
+
+          },
           "viento": {
             "velocidad": 20,
             "direccion": "Sur"
@@ -76,6 +81,7 @@
     },
     {
       "nombre": "Oviedo",
+      "imagen": "/img/Oviedo.jpg",
       "fechas":  [
         {
           "fecha": "2024-05-08",
@@ -113,6 +119,7 @@
     },
     {
       "nombre": "Gijón",
+      "imagen": "/img/Gijon.jpg",
       "fechas":  [
         {
           "fecha": "2024-05-08",
@@ -150,6 +157,7 @@
     },
     {
       "nombre": "Avilés",
+      "imagen": "/img/Aviles.jpg",
      "fechas": [
         {
           "fecha": "2024-05-08",
